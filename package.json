@@ -1,0 +1,16 @@
+{
+  "name": "stickynote",
+  "version": "1.0.0",
+  "description": "sticky note ",
+  "defualt": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Abolfazl Mahdikhani",
+  "license": "ISC",
+  "devDependencies": {
+    "animejs": "^3.2.1",
+    "parcel": "^2.5.0"
+  }
+}

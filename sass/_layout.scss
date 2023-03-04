@@ -1,0 +1,157 @@
+.container {
+  display: grid;
+  grid-template-columns: 11.5rem 1fr;
+
+  grid-template-areas: "aside header"
+    "aside main";
+
+
+  grid-template-rows: repeat(auto-fit, minmax(11rem, 1fr));
+  column-gap: 5rem;
+
+}
+
+////////////////////////////
+////HEADER
+.header {
+  grid-area: header;
+  height: 12rem;
+  padding: 3rem 2.5rem 3rem 0;
+  display: flex;
+  align-items: stretch;
+
+  justify-content: space-between;
+
+}
+
+////////////////////////////
+////ASIDE
+.aside {
+  grid-area: aside;
+  background-color: var(--color-body);
+  width: 100%;
+  height: 100%;
+
+  grid-row: 1/-1;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-right: 2px solid var(--border-color);
+  overflow: hidden;
+
+  &__title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--color-title);
+  }
+
+  &__add-note {
+    margin-top: 7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+////////////////////////////
+////MAIN
+.main {
+  grid-area: main;
+
+  &__title {
+    font-size: 6rem;
+    color: var(--color-title);
+    margin-top: -2.5rem;
+  }
+}
+
+////////////////////////////
+////NOTS
+.notes-container {
+  padding: 5.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+  gap: 3rem;
+
+  @media screen and (max-width:$bp-lg) {
+    padding: 5.5rem 4rem 5.5rem 0;
+
+  }
+}
+
+.color-box {
+  // margin-top: 2.5rem;
+  position: relative;
+  margin-top: -2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-box-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  margin-right: 2.5rem;
+
+  .color {
+    transition: box-shadow .3s;
+
+    &:hover {
+      box-shadow: 0 2rem 3rem .5rem rgba(0, 0, 0, .2);
+    }
+
+  }
+
+}
+
+.edit-box-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  // margin-right: 2.5rem;
+
+  .edit-item {
+    transition: box-shadow .3s;
+
+    &:hover {
+      box-shadow: 0 2rem 3rem .5rem rgba(0, 0, 0, .2);
+    }
+
+  }
+
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+////////////////////////////
+////Filter
+
+
+
+.bookmark {
+  position: relative;
+
+  height: 100%;
+  .modal:hover,
+  .btn-simple:hover~.modal {
+
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+// .row{
+//   position: relative;
+// }

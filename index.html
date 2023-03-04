@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <!-- search input -->
+            <div class="search">
+                <svg class="search__icon">
+                    <use xlink:href="./img/sprite.svg#icon-search-normal-1"></use>
+                </svg>
+                <input type="text" class="search__input" placeholder="Search">
+            </div>
+            <!-- right -->
+
+
+
+            <div class="header-right">
+                <div class="bookmark">
+                    <button class="btn-simple__bookmark btn-simple">
+                        <svg class="btn-simple__bookmark-icon" fill="currentColor">
+                            <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="btn-simple__bookmark-txt">bookmark</span>
+                    </button>
+
+                    <!-- submenu -->
+                    <ul class="modal">
+                        <div class="modal-list">
+
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+
+        </header>
+
+        <!-- aside -->
+        <aside class="aside">
+            <!-- title -->
+            <h2 class="aside__title">docket</h2>
+            <!-- add note -->
+            <section class="aside__add-note">
+                <button class="btn btn-action">
+                    <svg class="btn-action__icon">
+                        <use xlink:href="./img/sprite.svg#icon-add"></use>
+                    </svg>
+                </button>
+                <!-- select color -->
+                <div class="color-box">
+                    <div class="color color-first  color-col" data-from="0" data-to="100" data-color="orange"></div>
+                    <div class="color color-second other color-col" data-from="125" data-to="150" data-color="red">
+                    </div>
+                    <div class="color color-third other color-col" data-from="175" data-to="200" data-color="purple">
+                    </div>
+                    <div class="color color-fourth other color-col" data-from="225" data-to="250" data-color="blue">
+                    </div>
+                    <div class="color color-fifth  other color-col" data-from="275" data-to="300" data-color="green">
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <!-- main -->
+        <main class="main">
+            <!-- title -->
+            <h1 class="main__title">Notes</h1>
+
+            <!-- notes -->
+            <section class="notes-container">
+                <!-- 
+                <div class="note note--orange" data-x="50">
+                    <textarea class="note__text">this is Docket note.</textarea>
+                    <button class=" btn btn-fav note__fav">
+                        <svg class="btn-fav__icon">
+                            <use xlink:href="./img/sprite.svg#icon-star"></use>
+                        </svg>
+                    </button>
+                     footer-note 
+                    <div class="note__bottom">
+                        <p class="note__date">may 21,2021</p>
+                        <button class=" btn btn-edit">
+                            <svg class="btn-edit__icon">
+                                <use xlink:href="./img/sprite.svg#icon-create"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+               -->
+
+
+            </section>
+        </main>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/app.js" type="module"></script>
+    <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+</body>
+
+</html>
