@@ -20,6 +20,6 @@ Features:
 
 
 
-(DEMO)=[https://stick-note-eaqk.vercel.app/]
+[DEMO](https://stick-note-eaqk.vercel.app/)
 
 ##Abolfzl Mahdikhani
